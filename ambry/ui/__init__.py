@@ -87,6 +87,7 @@ def setup_logging():
 
 
 app = Flask(__name__)
+cors = CORS(app)
 
 if False:  # How to use a proxy
     from werkzeug.contrib.fixers import ProxyFix
